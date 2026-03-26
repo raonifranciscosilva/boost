@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://l7qmi5uv5dpx"]
 
 [ext_resource type="Script" uid="uid://bbok8tsqfyi02" path="res://scripts/main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://bxfqcdmrnlxan" path="res://icons/afterburn.png" id="2_7vrkn"]
 
 [node name="main_menu" type="Control" unique_id=721996286]
 layout_mode = 3
@@ -18,13 +19,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="play" type="Button" parent="HBoxContainer" unique_id=1247331157]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
-text = "Play"
+icon = ExtResource("2_7vrkn")
+icon_alignment = 1
 
 [node name="about" type="Button" parent="HBoxContainer" unique_id=1789935943]
 layout_mode = 2
