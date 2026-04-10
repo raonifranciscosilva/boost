@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://emcwvcpbna55"]
+
+[ext_resource type="Script" uid="uid://cci15li6qmp7t" path="res://menu, ui, etc/control.gd" id="1_ug6pq"]
+[ext_resource type="Texture2D" uid="uid://x65bti7ubuhj" path="res://icons/space-suit.png" id="2_veq7y"]
+
+[node name="Control" type="Control" unique_id=577470478]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ug6pq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2014953175]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.53, 0.53)
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer" unique_id=1440457503]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture_normal = ExtResource("2_veq7y")
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer" unique_id=1144642224]
+layout_mode = 2
+texture_normal = ExtResource("2_veq7y")

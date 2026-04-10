@@ -1,0 +1,21 @@
+[gd_scene format=4 uid="uid://b3vpnlxfs05h6"]
+
+[ext_resource type="PackedScene" uid="uid://cdg7pkmy8j4cf" path="res://3D/1.glb" id="1_it7jr"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vocji"]
+_surfaces = [{
+"aabb": AABB(-1.0288675, -1.0288675, -1.0288675, 2.057735, 2.057735, 2.057735),
+"attribute_data": PackedByteArray("Jn1aPkDpQz4mfVo+QOlDPiZ9Wj5A6UM+Jn1aPkDpQz4mfVo+QOlDPiZ9Wj5A6UM+Jn1aPkDpQz4mfVo+QOlDPiZ9Wj5A6UM+Jn1aPkDpQz4mfVo+QOlDPiZ9Wj5A6UM+Jn1aPkDpQz4mfVo+QOlDPiZ9Wj5A6UM+Jn1aPkDpQz4mfVo+QOlDPiZ9Wj5A6UM+Jn1aPkDpQz4mfVo+QOlDPiZ9Wj5A6UM+Jn1aPkDpQz4mfVo+QOlDPiZ9Wj5A6UM+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAAABAAMABAAGAAUABAAFAAcACAAKAAkACAAJAAsADAAOAA0ADAANAA8AEAASABEAEAARABMAFAAWABUAFAAVABcA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("7rGDv+6xg7/usYM/7rGDv+6xgz/usYO/7rGDv+6xgz/usYM/7rGDv+6xg7/usYO/7rGDv+6xg7/usYO/7rGDP+6xgz/usYO/7rGDv+6xgz/usYO/7rGDP+6xg7/usYO/7rGDP+6xg7/usYO/7rGDP+6xgz/usYM/7rGDP+6xgz/usYO/7rGDP+6xg7/usYM/7rGDP+6xg7/usYM/7rGDv+6xgz/usYM/7rGDP+6xgz/usYM/7rGDv+6xg7/usYM/7rGDv+6xg7/usYO/7rGDP+6xg7/usYM/7rGDP+6xg7/usYO/7rGDv+6xg7/usYM/7rGDP+6xgz/usYO/7rGDv+6xgz/usYM/7rGDv+6xgz/usYO/7rGDP+6xgz/usYM/AAAAgP///78AAACA////vwAAAID///+/AAAAgP///7//////////v/////////+//////////7//////////v///AID///+///8AgP///7///wCA////v///AID///+//3//f////z//f/9/////P/9//3////8//3//f////z8AgAAA////vwCAAAD///+/AIAAAP///78AgAAA////vwCA//////+/AID//////78AgP//////vwCA//////+/")
+}]
+
+[node name="1" unique_id=1184308847 instance=ExtResource("1_it7jr")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cube" parent_id_path=PackedInt32Array(1788599830) index="0" unique_id=2133751339]
+mesh = SubResource("ArrayMesh_vocji")

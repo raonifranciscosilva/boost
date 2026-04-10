@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpfuu7jed77hr"]
+[gd_scene format=3 uid="uid://dpfuu7jed77hr"]
 
-[ext_resource type="Script" path="res://Level/LandingPad.gd" id="1_emcsv"]
+[ext_resource type="Script" uid="uid://c0nfeahqloqwy" path="res://Level/LandingPad.gd" id="1_emcsv"]
 [ext_resource type="PackedScene" uid="uid://drgldvpy4wbmu" path="res://player.tscn" id="2_n4sk3"]
 [ext_resource type="PackedScene" uid="uid://b51rsv1tkl46r" path="res://Background.tscn" id="3_olv0h"]
+[ext_resource type="PackedScene" uid="uid://xdssgegiw0kw" path="res://3D/4.tscn" id="4_cd4c1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sn1gy"]
 albedo_color = Color(0.890196, 0.501961, 0.917647, 1)
@@ -13,21 +14,21 @@ albedo_color = Color(0.337255, 0.662745, 0.788235, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2tbjd"]
 albedo_color = Color(0.0862745, 0.729412, 0.239216, 1)
 
-[node name="Level" type="Node3D"]
+[node name="Level" type="Node3D" unique_id=1689447573]
 
-[node name="Obstacle" type="CSGBox3D" parent="." groups=["Hazard"]]
+[node name="Obstacle" type="CSGBox3D" parent="." unique_id=1636310476 groups=["Hazard"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4546, 0)
 use_collision = true
 size = Vector3(3, 2, 3)
 material = SubResource("StandardMaterial3D_sn1gy")
 
-[node name="LaunchPad" type="CSGBox3D" parent="."]
+[node name="LaunchPad" type="CSGBox3D" parent="." unique_id=642354859]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.2, 0)
 use_collision = true
 size = Vector3(2, 0.4, 2)
 material = SubResource("StandardMaterial3D_78nla")
 
-[node name="LandingPad" type="CSGBox3D" parent="." groups=["Goal"]]
+[node name="LandingPad" type="CSGBox3D" parent="." unique_id=1598563074 groups=["Goal"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.2, 0)
 use_collision = true
 size = Vector3(2, 0.4, 2)
@@ -35,10 +36,13 @@ material = SubResource("StandardMaterial3D_2tbjd")
 script = ExtResource("1_emcsv")
 file_path = "res://Level/level_3.tscn"
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2054966747]
 transform = Transform3D(1, 0, 0, 0, 0.978148, 0.207912, 0, -0.207912, 0.978148, 0, 5.817, 9.33)
 
-[node name="Player" parent="." instance=ExtResource("2_n4sk3")]
+[node name="Player" parent="." unique_id=1424135011 instance=ExtResource("2_n4sk3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 1.53833, 0)
 
-[node name="Floor" parent="." instance=ExtResource("3_olv0h")]
+[node name="Floor" parent="." unique_id=188225183 instance=ExtResource("3_olv0h")]
+
+[node name="4" parent="." unique_id=1600566648 instance=ExtResource("4_cd4c1")]
+transform = Transform3D(-0.9983986, 0, -0.056570742, 0, 1, 0, 0.056570742, 0, -0.9983986, 1.8996258, -0.4443264, 0)
