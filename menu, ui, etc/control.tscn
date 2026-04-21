@@ -1,29 +1,53 @@
 [gd_scene format=3 uid="uid://emcwvcpbna55"]
 
-[ext_resource type="Script" uid="uid://cci15li6qmp7t" path="res://menu, ui, etc/control.gd" id="1_ug6pq"]
-[ext_resource type="Texture2D" uid="uid://x65bti7ubuhj" path="res://icons/space-suit.png" id="2_veq7y"]
+[ext_resource type="Script" uid="uid://dn3yw3uad85t4" path="res://menu, ui, etc/main_menu.gd" id="1_6raop"]
 
-[node name="Control" type="Control" unique_id=577470478]
+[node name="Control" type="Node2D" unique_id=36803704]
+script = ExtResource("1_6raop")
+
+[node name="Control" type="Control" parent="." unique_id=1298014444]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ug6pq")
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2014953175]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(0.53, 0.53)
-alignment = 1
+[node name="play" type="Button" parent="Control" unique_id=674655302]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 530.0
+offset_top = 265.0
+offset_right = 571.0
+offset_bottom = 296.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
 
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer" unique_id=1440457503]
-custom_minimum_size = Vector2(30, 30)
-layout_mode = 2
-texture_normal = ExtResource("2_veq7y")
+[node name="option" type="Button" parent="Control" unique_id=619435546]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 527.0
+offset_top = 371.0
+offset_right = 594.0
+offset_bottom = 402.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "options
+"
 
-[node name="TextureButton2" type="TextureButton" parent="VBoxContainer" unique_id=1144642224]
-layout_mode = 2
-texture_normal = ExtResource("2_veq7y")
+[node name="bg" type="Sprite2D" parent="." unique_id=1550734076]
+
+[node name="logo" type="Sprite2D" parent="." unique_id=1876297054]
+
+[connection signal="pressed" from="Control/play" to="." method="_on_play_pressed"]
