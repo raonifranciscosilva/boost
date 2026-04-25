@@ -8,7 +8,7 @@ data = PackedVector3Array(-0.98429996, 0, 1, -1, 0, 0.9842, -0.98429996, 0, 0.98
 
 [node name="4" unique_id=1600566648 groups=["Hazard"] instance=ExtResource("1_tej0e")]
 
-[node name="Landscape" parent="." index="0" unique_id=1765306719 groups=["Hazard"]]
+[node name="Landscape" parent="." index="0" unique_id=2066448931 groups=["Hazard"]]
 material_override = ExtResource("2_srqul")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Landscape" index="0" unique_id=1997081598 groups=["Hazard"]]
